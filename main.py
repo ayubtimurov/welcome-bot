@@ -10,7 +10,7 @@ BOT_USERNAME: Final = '@welcomeDIIbot'
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print("Start command recieved.")
     user = update.effective_user
-    await update.message.reply_text(f"👋 Hello {user.first_name} {user.last_name}. Welcome to Welcome Bot😊")
+    await update.message.reply_text(f"👋 Hello {user.first_name}. Welcome to Welcome Bot😊")
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print("Help command recieved.")
